@@ -2,8 +2,6 @@
 
 For example; Yoga at home is a site created to teach yoga and to make yoga more accessible. The site will be targeted toward people of all levels from beginner to advanced by having three course levels with varying course material. Yoga at home allows its users to view the live sessions calendar, to buy courses and to sign up for newsletters.
 
-![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
-
 ## Features 
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
@@ -29,34 +27,27 @@ In this section, you should go over the different parts of your project, and des
   - The ethos section will allow the user to see the benefits of taking a yoga class, as well as the benefits of yoga overall. 
   - This user will see the value of signing up for the yoga classes and/or yoga live sessions. This should encourage the user to consider yoga as their form of exercise. 
 
-![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
-
 - __Live sessions section__
 
   - This section will allow the user to access the live zoom classes and to know when they will happen. 
   - This section will be updated as these times change to keep the user up to date. 
 
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
 
 - __The Footer__ 
 
   - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
   - The footer is valuable to the user as it encourages them to keep connected via social media
 
-![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
-
 - __Courses__
 
   - The courses will provide the user with three pricing cards with a short description. 
   - This section is valuable to the user as they will be able to buy the courses appropriate to their needs. 
 
-![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
 
 - __The Sign Up Page__
 
   - This page will allow the user to get signed up to Yoga at home newsletters. The user will be asked to submit their full name and email address and if they would like to leave a comment (optional). 
 
-![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
 
 ### Features Left to Implement:
 
