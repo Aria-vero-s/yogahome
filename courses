@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <meta name="description" content="Practice yoga and mindfulness at home">
+        <meta name="keywords" content="yoga, mindfulness, home">
+
+      <title>Yoga at home</title>
+
+    <!-- Stylesheet -->
+
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <style>
+
+
+      .wrapper {
+      height: 400px;
+      width: 100%;
+      padding-top:50px;
+      margin:20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+          
+      .product-img {
+      float: left;
+      height: 400px;
+      width: 300px;
+      }
+          
+      .product-info {
+      float: left;
+      height: 400px;
+      width: 500px;
+      background-color: #e7e7e7;
+          
+      }
+          
+      .product-text {
+      height: 400px;
+      width: 300px;
+      margin: 25px 10px 10px 25px;
+      padding-top: 40px;
+      line-height: 30px;
+      }
+          
+      .buy button {
+      float: right;
+      margin-right: 80px;
+      height: 50px;
+      width: 150px;
+      box-sizing: border-box;
+      border: transparent;
+      border-radius: 60px;
+      color: #ffffff;
+      background-color: #bad4cd;
+      }
+          
+      .buy button:hover {
+      background-color: #79b0a1;
+      }
+    </style>
+
+</head>
+
+    <!-- body -->    
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1 id="logo">Yoga at home</h1>
+        </a>
+
+    <!-- navigation -->  
+
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="signup.html">Sign up</a>
+                </li>
+                <li>
+                    <a href="courses.html" class="active">Courses</a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+        <div class="wrapper">
+          <div class="product-img">
+            <img src="assets/images/pose1.jpg" height="400" width="300">
+          </div>
+          <div class="product-info">
+            <div class="product-text">
+              <h1>Beginner yoga</h1>
+              <h2>With Professor John</h2>
+              <p>8-week course<br>100 pre-recorded lessons<br>Access to exclusive content and events<br></p>
+            <div class="buy">
+              <button type="button" onclick="window.open('https://www.paypal.com/uk/home','paypal1')">buy now</button>
+            </div>
+          </div>
+          </div>
+        </div>
+  
+        <div class="wrapper">
+          <div class="product-img">
+            <img src="assets/images/pose2.jpg" height="400" width="300">
+          </div>
+          <div class="product-info">
+            <div class="product-text">
+              <h1>Intermediate yoga</h1>
+              <h2>With Professor Nadeem</h2>
+              <p>8-week course<br>100 pre-recorded lessons<br>Access to exclusive content and events<br></p>
+            <div class="buy">
+              <button type="button" onclick="window.open('https://www.paypal.com/uk/home','paypal2')">buy now</button>
+            </div>
+          </div>
+          </div>
+        </div>
+  
+        <div class="wrapper">
+          <div class="product-img">
+            <img src="assets/images/pose3.jpg" height="400" width="300">
+          </div>
+          <div class="product-info">
+            <div class="product-text">
+              <h1>Pro yoga</h1>
+              <h2>With Professor Chelsey</h2>
+              <p>8-week course<br>100 pre-recorded lessons<br>Access to exclusive content and events<br></p>
+            <div class="buy">
+              <button type="button" onclick="window.open('https://www.paypal.com/uk/home','paypal3')">buy now</button>
+            </div>
+          </div>
+          </div>
+        </div>
+    
+
+    <!-- footer and social media -->  
+
+    <footer>
+<ul class="social-networks">
+    <li>
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+    </li>
+    <li>
+        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter-square"></i></a>
+    </li>
+    <li>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visit our Youtube page (opens in a new tab)"><i class="fa-brands fa-youtube-square"></i></a>
+    </li>
+    <li>
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+    </li>
+</ul>
+    </footer>
+
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/82f5a67465.js" crossorigin="anonymous"></script>
+</body>
+</html>
