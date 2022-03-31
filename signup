@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <meta name="description" content="Practice yoga and mindfulness at home">
+        <meta name="keywords" content="yoga, mindfulness, home">
+
+    <!-- Stylesheet -->
+
+        <link rel="stylesheet" href="assets/CSS/style.css">
+    <title>Yoga at home</title>
+</head>
+
+    <!-- body -->    
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1 id="logo">Yoga at home</h1>
+        </a>
+
+    <!-- navigation -->  
+
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="signup.html" class="active">Sign up</a>
+                </li>
+                <li>
+                    <a href="courses.html">Courses</a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+ <!-- form -->  
+
+ <section class="form-section">
+        
+    <form method="GET" action="feedback.html" class="signup-form">
+        
+        <h2>Sign up to our newsletter</i></h2>
+        
+        <label for="fname">First Name</label>
+        <input id="fname" class="text-input" name="first_name" type="text" required>
+        
+        <label for="lname">Last Name</label>
+        <input id="lname" class="text-input" name="last_name" type="text" required>
+        
+        <label for="email">Email Address</label>
+        <input type="email" class="text-input" id="email" name="email_address" required>
+        
+        <label for="comment">Leave a comment</label>
+        <textarea id="comment" class="text-input" name="comment" type="text" style="height:100px; text-align: start;"></textarea>
+        
+        <input class="join-button" type="submit" value="Sign up">
+    </form>
+</section>
+
+        <!-- footer and social media -->  
+
+        <footer>
+            <ul class="social-networks">
+                <li>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter-square"></i></a>
+                </li>
+                <li>
+                    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visit our Youtube page (opens in a new tab)"><i class="fa-brands fa-youtube-square"></i></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+                </footer>
+            
+                <!-- font awesome script -->
+                <script src="https://kit.fontawesome.com/82f5a67465.js" crossorigin="anonymous"></script>
+            </body>
+            </html>
