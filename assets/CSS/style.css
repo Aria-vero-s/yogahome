@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@100;400&display=swap');
+/* colour palette:
+Dark brown: #51473B
+brown: #665A4C
+beige: #DECBB7
+light beige: #EEDBC7
+green:#A3D9C4
+dark green: #758E78
+blue: #848DA1
+Dark blue: #626790 */
 
 * {
     margin: 0;
@@ -8,42 +17,39 @@
 
 body {
     font-family:'Merriweather', serif;
-    font-weight: 100;
-    color: #3a3a3a;
+    color: #665A4C;
+    background-color: #decbb6;
 }
 
 /* headings and logo */
 
 h1 {
-    font-family:'Raleway', sans-serif;
-    text-transform: uppercase;
     letter-spacing: 4px;
-    color: #252525;
+    color: #665A4C;
 }
 
 h2 {
-    font-family:'Merriweather', serif;
-    font-weight: 400;
-    text-transform: none;
-    letter-spacing: 4px;
-    color: #252525;
+    color: #EEDBC7;
+}
+
+h3 {
+    color: #665A4C;
 }
 
 #logo {
+    width:100%;
+    max-width: 300px;
+    margin-top: -80px;
+    margin-left: -20px;
+    margin-bottom: -80px;
     float: left;
-    font-size: 280%;
-    margin-left: 30px;
 }
 
 /* navigation links */
 
-#menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-}
-
 #menu, #logo {
     line-height: 75px;
+    letter-spacing: 4px;
 }
 
 #menu li {
@@ -53,18 +59,18 @@ h2 {
 }
 
 #menu a {
-    color: #3a3a3a;
+    color: #665A4C;
     text-decoration: none;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 #menu a:hover {
-    color: rgb(106, 165, 147);
+    color: #A3D9C4;
     text-decoration: none;
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid white;
 }
 
 /* hero image and cover text */
@@ -73,123 +79,144 @@ h2 {
     height: 600px;
     width: 100%;
     overflow: hidden;
-
     position: relative;
 }
 
-#cover-text, #cover-text h2 {
-    color: #fff;
-}
-
 #hero-image {
-    height: 550px;
-    width: 100%; 
-    background: url('../images/hero-yoga.jpg') no-repeat center center;
-    background-size:cover;
+    height: 500px;
+    width: 100%;
+    margin-top: -100px;
+    background: url('../images/lady.jpg') no-repeat top;
+    background-size: contain;
 
     /* animates zoom effect on loading page */
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-
-/* creates the level of zoom for hero image */
-@keyframes hero-zoom {
-    from{
-        transform: scale(1);
+    position: absolute;
+    top: 0;
+    animation: move-up-down 2s infinite; /* Set the animation properties */
+  }
+  
+  @keyframes move-up-down {
+    0% {
+      top: 0;
     }
-    to{
-        transform: scale(1.1);
+    50% {
+      top: 50px; /* Set the amount of upward movement */
     }
-}
+    100% {
+      top: 0;
+    }
+  }
 
-#cover-text {
-    font-size: 130%;
-    font-family:'Raleway', sans-serif;
-    font-weight: 100;
+  @media (min-width: 768px) {
+    /* Styles for desktop view */
+    #hero-image {
+      height: 140%; /* make image bigger in desktop view */
+      width: 100%;
+      margin-top: -220px;
+      background: url('../images/lady.jpg') no-repeat top;
+      background-size: contain;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    /* Styles for mobile view */
+    #hero-image {
+        width: 100%;
+        margin-top: -60px;
+        background: url('../images/lady.jpg') no-repeat top;
+        background-size: contain;
+    }
+  }
+
+#hero-text {
+    width:100%;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    text-align:center;
-
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: rgb(163, 163, 163, 0.7);
-    top: 150px;
-    bottom:50px;
-    left: 150px;
-    position:absolute;
+    text-align:left;
+    color:#FFF;
+    margin-left:30px;
+    position: absolute;
     align-items: center;
+    justify-content: center;
     display: flex;
 }
 
 /* yoga ethos */
 
 #yoga-ethos {
-    height: 400px;
     width: 100%;
-}
-
-.table {
-    display:flex;
-    height: 400px;
-    width: 100%; 
-    background-color: rgb(143, 168, 161)
+    color: #EEDBC7;
 }
 
 .column {
-    flex: 33.33%;
-    padding: 50px;
-    margin: 50px;
-    text-align: center;
+    height: 100vh;
+    width: 100%; 
+    background-color: rgb(143, 168, 161);
+    padding-bottom:50px;
 }
 
-hr {
-    border-top: 1px solid #3a3a3a;
-    padding:5px;
-    width: 100%;
-    margin: 0;
+.row {
+    flex: 33.33%;
+    padding: 50px;
+    text-align: center;
+    color:white;
 }
 
 /* event times */
 
 .livesessions{
-    padding:20px;
-    margin-top:50px;
-}
-
-#calendar {
-    background-image: url('../images/signupform.jpg');
-    background-repeat: no-repeat;
+    height:100px;
+    width:100%;
+    background-image: url('../images/animation.gif');
     background-size: cover;
     background-position: center;
-    width: 100%;
-    overflow: hidden;
+    font-size: 150%;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    display:flex;
 }
 
-#calendar div {
-    color: #fafafa;
-    line-height: 2.2;
-    background-color: rgba(0, 0, 0, .6);
-    width: 20%;
-    height: 300px;
-    float: left;
-    padding: 30px 0 0 10px;
+/*
+#A3D9C4
+dark green: #758E78
+blue: #848DA1
+Dark blue: #626790 */
+
+.calendar {
+    width:100%;
     text-align: center;
-    border: 2px solid white;
-    box-sizing: border-box;
 }
 
-#calendar h2 {
-    color: #fafafa;
+@media (max-width: 767px) {
+    /* Styles for mobile view */
+    .calendar p {
+        width:100%;
+        text-align: center;
+        padding-top:20px;
+    }
+    .calendar h2 {
+        padding-top:50px;
+        font-style: oblique;
+    }
+    .calendar {
+        padding-bottom:100px;
+    }
+    
+  }
+
+.calendar h2 {
+    color: white;
+    font-size: 120%;
+    text-transform: uppercase;
 }
 
-#calendar a {
-    color: #aadfcb;
+.calendar a {
+    color:white;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    text-decoration:none;
 }
 
-#calendar a:hover {
+.calendar a:hover {
     color: rgb(106, 165, 147);
 }
 
@@ -263,6 +290,7 @@ hr {
 
 footer {
     height: 150px;
+    background-color: #FFF;
 }
 
 .social-networks {
