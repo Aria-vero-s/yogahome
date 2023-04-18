@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 /* colour palette:
 Dark brown: #51473B
 brown: #665A4C
@@ -16,30 +17,41 @@ Dark blue: #626790 */
 }
 
 body {
-    font-family:'Merriweather', serif;
+    font-family:'lato';
     color: #665A4C;
-    background-color: #decbb6;
+    background-color:#decbb6;
 }
 
 /* headings and logo */
 
+header {
+    margin-top: 30px;
+}
+
 h1 {
-    letter-spacing: 4px;
-    color: #665A4C;
+    color:white;
 }
 
 h2 {
     color: #EEDBC7;
+    font-family:'karla';
 }
 
 h3 {
-    color: #665A4C;
+    color: white;
+}
+
+h4 {
+    font-family:'karla';
+    color: #DECBB7;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 #logo {
     width:100%;
     max-width: 300px;
-    margin-top: -80px;
+    margin-top: -50px;
     margin-left: -20px;
     margin-bottom: -80px;
     float: left;
@@ -47,7 +59,7 @@ h3 {
 
 /* navigation links */
 
-#menu, #logo {
+#menu {
     line-height: 75px;
     letter-spacing: 4px;
 }
@@ -56,6 +68,7 @@ h3 {
     float: right;
     list-style-type: none;
     margin-right: 30px;
+    margin-top: 50px
 }
 
 #menu a {
@@ -65,7 +78,7 @@ h3 {
 }
 
 #menu a:hover {
-    color: #A3D9C4;
+    color: white;
     text-decoration: none;
 }
 
@@ -73,13 +86,65 @@ h3 {
     border-bottom: 1px solid white;
 }
 
+/* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+}
+
 /* hero image and cover text */
 
 #hero-outer {
-    height: 600px;
+    height: 500px;
     width: 100%;
     overflow: hidden;
     position: relative;
+}
+
+@media (max-width: 767px) {
+    #hero-outer {
+        justify-content: center;
+        display: flex;
+    }
+  }
+
+
+@media (max-width: 400px) {
+    /* Styles for mobile view */
+    #hero-outer {
+        justify-content: center;
+        display: flex;
+        height:400px;
+    }
+}
+
+#hero-text {
+    width:100%;
+    max-width: 500px;
+    position: absolute;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align:left;
+    margin-left:30px;
+}
+
+@media (max-width: 767px) {
+    #hero-text {
+        max-width: 500px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Styles for mobile view */
+    #hero-text {
+        max-width: 300px;
+    }
 }
 
 #hero-image {
@@ -119,7 +184,6 @@ h3 {
   }
   
   @media (max-width: 767px) {
-    /* Styles for mobile view */
     #hero-image {
         width: 100%;
         margin-top: -60px;
@@ -128,148 +192,193 @@ h3 {
     }
   }
 
-#hero-text {
-    width:100%;
-    text-transform: uppercase;
-    text-align:left;
-    color:#FFF;
-    margin-left:30px;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
+  @media (max-width: 400px) {
+    /* Styles for mobile view */
+    #hero-image {
+        width: 130%;
+        margin-top: -60px;
+        background: url('../images/lady.jpg') no-repeat top;
+        background-size: contain;
+    }
+  }
 
 /* yoga ethos */
 
 #yoga-ethos {
     width: 100%;
-    color: #EEDBC7;
+    color:white;
+    background-color: rgb(143, 168, 161);
+    justify-content: center;
+    display: flex;
 }
 
 .column {
-    height: 100vh;
-    width: 100%; 
-    background-color: rgb(143, 168, 161);
     padding-bottom:50px;
+    max-width: 800px;
 }
 
 .row {
     flex: 33.33%;
     padding: 50px;
     text-align: center;
-    color:white;
 }
 
 /* event times */
 
-.livesessions{
-    height:100px;
-    width:100%;
-    background-image: url('../images/animation.gif');
-    background-size: cover;
-    background-position: center;
-    font-size: 150%;
-    text-transform: uppercase;
-    align-items: center;
+.calendar-header {
+    max-width: 350px;
+    color:white;
+    display: flex;
     justify-content: center;
-    display:flex;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom:10px;
+    margin-top: 40px;
 }
-
-/*
-#A3D9C4
-dark green: #758E78
-blue: #848DA1
-Dark blue: #626790 */
 
 .calendar {
-    width:100%;
-    text-align: center;
-}
-
-@media (max-width: 767px) {
-    /* Styles for mobile view */
-    .calendar p {
-        width:100%;
-        text-align: center;
-        padding-top:20px;
-    }
-    .calendar h2 {
-        padding-top:50px;
-        font-style: oblique;
-    }
-    .calendar {
-        padding-bottom:100px;
-    }
-    
-  }
-
-.calendar h2 {
-    color: white;
-    font-size: 120%;
-    text-transform: uppercase;
+  font-size: 130%;
+  width: 100%;
+  border-radius: 20px;
+  justify-content: center;
+  display: flex;
+  background-color: white;
+  margin-bottom: 100px;
+  max-width: 700px;
+  margin: 0 auto 100px auto;
+  line-height: 60px;
+  margin-top: 80px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .calendar a {
-    color:white;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-    text-decoration:none;
+  text-decoration: none;
+  color: #A3D9C4;
+font-family: 'karla';
+font-weight: 500;
 }
 
 .calendar a:hover {
-    color: rgb(106, 165, 147);
+  color: #665a4c;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .calendar {
+    max-width: 350px;
+    line-height: 30px;
+    flex-direction: column;
+  }
+
+  .block {
+    background-color:rgb(243, 239, 233);
+    border-radius: 20px;
+  }
+
+  .calendar-item {
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+  }
+}
+
+#newsletter-link {
+    background-color: #636363;
+    height:400px;
+    width:100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: xx-large;
+    transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+#newsletter-link a {
+    background-color: #636363;
+    height:400px;
+    width:100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: xx-large;
+    transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+#newsletter-link a:hover {
+    background-color: #A3D9C4;
+    color:#636363
+}
+
+@media screen and (max-width:400px) {
+    #newsletter-link a {
+        margin-left: 30px;
+    }
 }
 
 /* Form */
 
-.form-section {
-    clear: left;
-    background: url("../images/signupform.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 900px;
+#signup-container {
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: calc(100% - 100px);
+}
+
+#signup-header {
+    padding-top:50px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .signup-form {
-    margin: 5%;
-    color:rgb(27, 27, 27);
-    background-color: rgba(255, 255, 255, 0.6);
-    position: absolute;
-    width: 30%;
-    padding: 30px;
-
-    border-width: 4px;
-    border-style: solid;
-    border-image: linear-gradient(to right, rgb(38, 123, 109), rgb(214, 173, 142)) 1;
+    padding-bottom:30px;
+    margin: 0 auto;
+    max-width: calc(100% - 200px);
 }
 
 .signup-form > h2 {
-    color: rgb(38, 123, 109);
+    font-family:'lato';
+    color: white;
     margin-bottom: 20px;
 }
 
 .text-input {
-    background:transparent;
+    background:white;
     color: #636363;
     width: 100%;
     height: 25px;
     margin: 5px 0 20px;
-    border: 1px solid #3b3b3b;
+    border: 2px solid #decbb6;
     border-radius: 2px;
+    transition: .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 .text-input:hover{
-    border-color: rgb(214, 173, 142);
+    border-color: white;
 }
 
 .join-button{
     margin-top: 20px;
-    border-radius: 2px;
-    padding: 15px 32px 15px 32px;
-    text-align: center;
+    border-radius: 60px;
     font-size: 100%;
-    background-color: #a2cabc;
-    color: #fafafa;
-    display:block;
+    height: 50px;
+    width: 150px;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: #A3D9C4;
+    transition: .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .join-button:hover{
@@ -290,7 +399,9 @@ Dark blue: #626790 */
 
 footer {
     height: 150px;
-    background-color: #FFF;
+    background-image: url('../images/animation.gif');
+    background-size: cover;
+    background-position: center;
 }
 
 .social-networks {
@@ -304,99 +415,14 @@ footer {
 .social-networks i {
     font-size: 160%;
     margin: 1%;
-    padding: 5%;
-    color: #3a3a3a;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    color: #FFF;
+    transition: .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-/* Media queries */
-
-/* For larger to medium screens size from 1200px wide and down */
-@media screen and (max-width: 1200px) {
-    #club-ethos {
-        width: 65%;
-        height: 1200px;
-        margin: 0 auto;
-    }
-
-    #welcome {
-        padding: 30px 0;
-        margin: 0;
-    }
-
-    #left-about, #right-about {
-        width: 100%;
-        float: left;
-        padding: 0;
-    }
-
-    #center-about {
-        clear: both;
-        width: 100%;
-        float: left;
-        padding: 0;
-    }
-
-    #times > div {
-        width: 100%;
-        clear: both;
-        height: 150px;
-        padding: 0;
-    }
-
-    hr {
-        display: none;
-    }
-
-
-}
-
-/* For medium screen sizes from 950px wide and down */
-@media screen and (max-width: 950px) {
-
-    #menu {
-        clear: left;
-        float: left;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        line-height: 25px;
-    }
-
-    #cover-text {
-        left: 0;
-    }
-
-    #club-ethos {
-        width: 90%;
-        height: 1200px;
-        margin: 0 auto;
-    }
-
-    .left-about-heading, .right-about-heading {
-        width: inherit;
-    }
-
-    .left-about-heading h2, .right-about-heading h2 {
-        width: 100%;
-        text-align: center;
-    }
-
-    .left-about-heading p, .right-about-heading p {
-        text-align: center;
-        padding: 0 20px;
-    }
-    #photos{
-        column-count: 3;
-    }
-
-
-}
-
-/* For small screen sizes 800px and down */
-
-@media screen and (max-width:800px){
-    #photos{
-        column-count: 2;
-    }
-
-
+.social-networks i:hover {
+    color: #A3D9C4;
+    font-size: 200%;
 }

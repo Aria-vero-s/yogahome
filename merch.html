@@ -36,6 +36,7 @@
         width: 300px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
+        object-fit: cover;
       }
           
       .wrapper .info {
@@ -52,10 +53,11 @@
       
       .wrapper .text > h1, h3 {
       color:#848DA1;
+      padding-bottom:10px;
       }
           
       .buy button {
-      float: right;
+      float: left;
       margin-right: 80px;
       height: 50px;
       width: 150px;
@@ -64,6 +66,7 @@
       color: #ffffff;
       margin-top:50px;
       background-color: #bad4cd;
+      transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out;
       }
           
       .buy button:hover {
@@ -79,29 +82,39 @@
         }
           .wrapper img {
           float: none;
-          height: 200px;
           object-fit: cover;
           width: 100%;
           border-top-left-radius: 20px;
           border-top-right-radius: 20px;
           border-bottom-left-radius: 0px;
         }
-      }
-
-    @media (max-width: 767px) {
-    /* Styles for mobile view */
-        .buy button {
+          .wrapper .text {
+          font-size: small;
+          height:0;
           margin: 0;
-          margin-top: 30px;
+          padding-top: 0px;
+          line-height: 18px;
+          padding-top:10px;
+        }
+          .buy button {
+          margin: 0;
+          margin-top: 5px;
           float:none;
       }
     }
-
     @media (max-width: 400px) {
-    /* Styles for mobile view */
-        .buy button {
+      /* Styles for mobile view */
+          .wrapper .text {
+        font-size: small;
+          height:0;
           margin: 0;
-          margin-top: 30px;
+          padding-top: 0px;
+          line-height: 18px;
+          padding-top: 5px;
+        }
+          .buy button {
+          margin: 0;
+          margin-top: 0px;
           float:none;
       }
     }
@@ -122,10 +135,10 @@
         <nav id="menu">
             <ul>
                 <li>
-                    <a href="merch.html">Merch!</a>
+                    <a href="merch.html" class="active">Merch!</a>
                 </li>
                 <li>
-                    <a href="courses.html" class="active">Courses</a>
+                    <a href="courses.html">Courses</a>
                 </li>
                 <li>
                     <a href="index.html">Home</a>
@@ -138,13 +151,14 @@
       <div class="container">
         <div class="wrapper">
           <div>
-            <img src="assets/images/pose1.jpg" height="400" width="300" style="object-position: 0 40%;">
+            <img src="assets/images/yoga-mat.jpg" height="600" width="300">
           </div>
           <div class="info">
             <div class="text">
-              <h1>Beginner yoga</h1>
-              <h3>With Professor John</h3>
-              <p>8-week course<br>100 pre-recorded lessons<br>Access to exclusive content and events<br></p>
+              <h1>Yoga mat</h1>
+              <h3>All you need to get started!</h3>
+              <h3>Our mat has a soft texture providing great hand grip.</h3>
+              <p>£18</p>
             <div class="buy">
               <button type="button" onclick="window.open('https://www.paypal.com/uk/home','paypal1')">buy now</button>
             </div>
@@ -154,13 +168,14 @@
   
         <div class="wrapper">
           <div>
-            <img src="assets/images/pose2.jpg" height="400" width="300" style="object-position: 0 30%;">
+            <img src="assets/images/single-bottle.jpg" height="600" width="300">
           </div>
           <div class="info">
             <div class="text">
-              <h1>Intermediate yoga</h1>
-              <h3>With Professor Nadeem</h3>
-              <p>8-week course<br>100 pre-recorded lessons<br>Access to exclusive content and events<br></p>
+              <h1>Water blottles</h1>
+              <h3>Remember to stay well hydrated!</h3>
+              <h3>Our water bottles have 3 different designs to choose from.</h3>
+              <p>£10</p>
             <div class="buy">
               <button type="button" onclick="window.open('https://www.paypal.com/uk/home','paypal2')">buy now</button>
             </div>
@@ -170,13 +185,14 @@
   
         <div class="wrapper">
           <div>
-            <img src="assets/images/pose3.jpg" height="400" width="300" style="object-position: 0;">
+            <img src="assets/images/3-bottles.jpg" height="600" width="300" style="object-fit:contain; background-color:#AAC4BB">
           </div>
           <div class="info">
             <div class="text">
-              <h1>Pro yoga</h1>
-              <h3>With Professor Chelsey</h3>
-              <p>8-week course<br>100 pre-recorded lessons<br>Access to exclusive content and events<br></p>
+              <h1>Special discount</h1>
+              <h3>Match bottles with your yoga squad!</h3>
+              <h3>Buy 2 bottles, get the 3rd one free</h3>
+              <p>£20</p>
             <div class="buy">
               <button type="button" onclick="window.open('https://www.paypal.com/uk/home','paypal3')">buy now</button>
             </div>
