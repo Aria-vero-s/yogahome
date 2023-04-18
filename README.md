@@ -1,6 +1,6 @@
 # Yoga at home
 
-For example; Yoga at home is a site created to teach yoga and to make yoga more accessible. The site will be targeted toward people of all levels from beginner to advanced by having three course levels with varying course material. Yoga at home allows its users to view the live sessions calendar, to buy courses and to sign up for newsletters.
+Yoga at home is a site created to teach yoga and to make yoga more accessible. The site will be targeted toward people of all levels from beginner to advanced by having three course levels with varying course material. Yoga at home allows its users to view the live sessions calendar, to buy courses and to sign up for newsletters.
 
 ## Features 
 
@@ -82,7 +82,7 @@ This section should describe the process you went through to deploy the project 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+The live link can be found here - https://aria-vero-s.github.io/yogahome/
 
 
 ## Credits 
